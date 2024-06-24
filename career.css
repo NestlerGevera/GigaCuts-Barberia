@@ -1,0 +1,580 @@
+@import url('https://fonts.cdnfonts.com/css/poppins');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family: 'DeadheadRough'; /* Name your font family */
+    src: url('C:\Users\FAMILY\Desktop\GigaCuts Barberia\fonts\DeadheadRough.ttf'); /* Locate the .ttf file within your directory*/
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+}
+
+body {
+    background-image: url('/assets/white-bg-1.jpg');
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*Header Code*/
+.header {
+    position: fixed;
+    height: 90px;
+    width: 80%;
+    /* background-image: url('/assets/navbar-bg.png'); */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    transition: background-color 1s ease, background-image 1s ease;
+    z-index: 100;
+    border-radius: 20px;
+    /* border: 1px solid #252525; */
+    margin: auto;
+    /* margin-top: 20px;
+    margin-left: 35px;
+    margin-right: 35px; */
+    transform: translate(13%, 20%);
+    animation-name: header-intro;
+    animation-duration: 1.5s;
+}
+
+.header.transparent {
+    background-color: transparent;
+}
+
+header.solid {
+    background-color: #252525;
+    background-image: url('/assets/navbar-bg.png');
+}
+
+@keyframes header-intro {
+    0% {transform: translate(140px, -100px);
+        opacity: 0;}
+    100% {transform: translate(140, 0px);
+        opacity: 1;}
+}
+
+header.scrolled {
+    background-image: url('/assets/navbar-bg.png');
+}
+
+.logo-container {
+    display: flex;
+    justify-content: space-between;
+    width: 320px;
+}
+
+#logo-img {
+    height: 50px;
+    width: 50px;
+}
+
+#logo-text {
+    padding-top: 10px;
+    font-family: 'DeadheadRough';
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    font-variant: small-caps;
+    font-weight: 600;
+}
+
+.navbar-1 {
+    padding-top: 15px;
+    width: 400px;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.navbar-1 a {
+    text-decoration: none;
+    color: white;
+    border: none;
+    transition: 0.3s;
+}
+
+.navbar-1 a:hover {
+    color: #FFD700;
+    border: 2px solid #FFD700;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.navbar-2 {
+    width: 212px;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.navbar-2 a {
+    text-decoration: none;
+    color: #F63E3E;
+    padding: 5px 20px 10px 20px;
+    margin: 5px;
+    border: 2px solid #F63E3E;
+    border-radius: 20px;
+    transition: .3s;
+}
+
+#login-btn {
+    background-color: #097BE3;
+    border: 2px solid #097BE3;
+    color: rgb(25, 25, 25);
+}
+
+#login-btn:hover {
+    background-color: transparent;
+    border-color: #097BE3;
+    color: #097BE3;
+}
+
+#signup-btn:hover {
+    background-color: #F63E3E;
+    color: rgb(25, 25, 25);
+}
+
+p {
+    color: white;
+    font-size: 30px;
+}
+
+#more-icon-btn {
+    display: none;
+    z-index: 160;
+    width: 40x;
+    height: 40px;
+}
+
+/*Main Code*/
+
+.vid-container video {
+    width: 100%;
+    z-index: 0;
+}
+
+.jointeam {
+    height: 0px;
+}
+
+.cuvid {
+    height: 466px;
+}
+
+.jointeam marquee {
+    font-size:75px;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-style: italic;
+    color:#FFD700;
+    text-shadow: 5px 5px 5px rgb(25, 25, 25);
+    transform: translate(0px, -350px);
+}
+
+#mar2 {
+    font-size:20px;
+    color:azure;
+    transform: translate(0px, -250px);
+}
+
+/*Location Code*/
+
+.location {
+    height: 700px;
+    width: 100%;
+}
+
+#loch1-1,
+#loch1-2 {
+    color: white;
+    font-variant: small-caps;
+    font-size: 3em;
+}
+
+#loch1-1 {
+    position: absolute;
+    top: 80%;
+    left: 25%;
+    z-index: 5;
+    text-shadow: 5px 5px 20px rgb(25, 25, 25);
+}
+
+#loch1-2 {
+    position: absolute;
+    top: 110%;
+    left: 30%;
+    z-index: 5;
+    color: #FFD700;
+    font-size: 4em;
+    text-shadow: 5px 5px 20px rgb(25, 25, 25);
+}
+
+#hiho {
+    position: absolute;
+    top: 183%;
+    left: 10%;
+    color: #252525;
+    font-size: 1.5em;
+    z-index: 5;
+}
+
+.location-container {
+    height: 700px;
+    width: 100%;
+}
+
+.location-level {
+    width: 100%;
+    height: 500px;
+    background-image: url('/assets/navbar-bg.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: translate(0px, 100px);
+}
+
+.location-level-1 {
+    width: 500px;
+    height: 300px;
+    background-image: url('/photos/labasan.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: translate(300px, -75px);
+}
+
+.location-level-2 {
+    width: 100%;
+    height: 375px;
+
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: translate(0px, -75px);
+    display: flex;
+}
+
+.location-level-2-1 {
+    width: 400px;
+    height: 376px;
+    margin-right: 50px;
+    background-color:#FFD700;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: translate(-300px, 0px) skewX(-20deg);
+}
+.location-level-2-2 {
+    width: 800px;
+    height: 376px;
+    background-color:#FFD700;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: translate(-300px, 0px) skewX(-20deg);
+    overflow: hidden;
+}
+
+.location-level-2-2 img {
+    transform: translate(-89px, -150px) skewX(20deg);
+    width: 970px;
+    height: auto;
+}
+
+/*Qoute Code*/
+
+.qoute-container {
+    width: 100%;
+    height: 500px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.qoute-text {
+    width: 30%;
+    padding-top: 60px;
+}
+
+.qoute-text p {
+    color: #252525;
+    font-size: 1.2em;
+    font-weight: normal;
+
+}
+
+.qoute-video video{
+    width: 600px;
+    margin-top: 100px;
+    border-radius: 20px;
+    box-shadow: 40px 40px rgb(25, 25, 25);
+}
+
+.qoute-text img {
+    width: 50px;
+    padding-bottom: 1em;
+}
+
+/*Why Join Code*/
+
+.whyjoin {
+    height: 900px;
+}
+
+.whyjoin-center {
+    width: 100%;
+}
+
+.whyjoin-container {
+    width: 700px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+    font-variant: small-caps;
+    padding: 30px;
+    padding-top: 100px;
+}
+
+.whyjoin-container ol {
+    list-style-type: none;
+}
+
+#wjlist li ul {
+    list-style-type: none;
+}
+
+#wjp {
+    color: #252525;
+    font-size: 1em;
+    text-align: center;
+}
+
+#wjp span {
+    color: #097BE3;
+}
+
+/*Footer Code*/
+.footer {
+    position: static;
+    z-index: 100;
+    background-image: url('/assets/navbar-bg.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+    transform: translate(0%, 174%);
+}
+
+.footer-content {
+    padding-left: 140px;
+    padding-right: 140px;
+    padding-top: 20px;
+}
+
+.footer p {
+    color: white;
+    z-index: 150;
+    font-size: 16px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo-container {
+    display: flex;
+    justify-content: space-between;
+    width: 320px;
+}
+
+.phone-div {
+    display: flex;
+    justify-content: space-between;
+    width: 140px;
+}
+
+.phone-div p {
+    padding-top: 2px;
+}
+
+#phone-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.email-div {
+    display: flex;
+    justify-content: space-between;
+    width: 280px;
+    margin-top: 5px;
+}
+
+.email-div p {
+    padding-bottom: 3px;
+}
+
+#email-icon {
+    width: 30px;
+    height: 25px;
+}
+
+.socmed-icons {
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+}
+
+.socmed-icons img {
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+#instagram-logo {
+    width: 31px;
+    height: 31px;
+}
+
+#tiktok-logo {
+    width: 31px;
+    height: 31px;
+}
+
+#reddit-logo {
+    width: 31px;
+    height: 31px;
+}
+
+.useful-links {
+    width: 400px;
+}
+
+.useful-links p {
+    font-size: 25px;
+    margin-top: 10px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.link-list {
+    list-style-position: inside;
+}
+
+.link-list li {
+    display: flex;
+}
+
+.link-list img {
+    width: 30px;
+    height: 30px;
+    transition: .3s;
+}
+
+.link-list a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+    padding-left: 5px;
+    margin: 5px;
+}
+
+.link-list a:hover {
+    color: #FFD700;
+    transform: translate(10px);
+}
+
+#top-btn {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+#top-btn:hover {
+    color: #FFD700;
+}
+
+#copyright {
+    padding-top: 15px;
+    text-align: center;
+}
+
+/*Photo Slider Code*/
+/* .barbershop-video {
+    position: absolute;
+    top: 35%;
+    left: 55%;
+    z-index: 50;
+    box-shadow: 10px 10px 20px #888888;
+}
+
+.barbershop-video video {
+    width: 400px;
+} */
+
+.images img {
+    border-radius: 40px;
+}
+
+.slider {
+    position: absolute;
+    border-radius: 40px;
+    width: 30%;
+    top: 25%;
+    left: 55%;
+    z-index: 50;
+    overflow: hidden;
+    box-shadow: 5px 5px 20px 5px rgb(25, 25, 25);
+}
+.images {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.images img {
+    height: 380px;
+    width: 100%;
+    transition: all 0.15s ease;
+}
+.images input {
+    display: none;
+}
+.dots {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+.dots label {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid #252525 3px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+}
+.dots label:hover {background: #252525;}
+#img1:checked ~ .m1 {
+    margin-left: 0;
+}
+#img2:checked ~ .m2 {
+    margin-left: -100%;
+}
+#img3:checked ~ .m3 {
+    margin-left: -200%;
+}
+#img4:checked ~ .m4 {
+    margin-left: -300%;
+}

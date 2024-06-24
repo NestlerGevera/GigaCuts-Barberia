@@ -1,0 +1,454 @@
+@import url('https://fonts.cdnfonts.com/css/poppins');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family: 'DeadheadRough'; /* Name your font family */
+    src: url('C:\Users\FAMILY\Desktop\GigaCuts Barberia\fonts\DeadheadRough.ttf'); /* Locate the .ttf file within your directory*/
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+}
+
+body {
+    background-image: url('/assets/white-bg-1.jpg');
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*Header Code*/
+.header {
+    position: fixed;
+    height: 90px;
+    width: 80%;
+    background-image: url('/assets/navbar-bg.png');
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    transition: background-image 0.3s ease;
+    z-index: 100;
+    border-radius: 20px;
+    border: 1px solid #252525;
+    margin: auto;
+    /* margin-top: 20px;
+    margin-left: 35px;
+    margin-right: 35px; */
+    transform: translate(13%, 20%);
+    animation-name: header-intro;
+    animation-duration: 1.5s;
+}
+
+@keyframes header-intro {
+    0% {transform: translate(140px, -100px);
+        opacity: 0;}
+    100% {transform: translate(140, 0px);
+        opacity: 1;}
+}
+
+header.scrolled {
+    background-image: url('/assets/navbar-bg.png');
+}
+
+.logo-container {
+    display: flex;
+    justify-content: space-between;
+    width: 320px;
+}
+
+#logo-img {
+    height: 50px;
+    width: 50px;
+}
+
+#logo-text {
+    padding-top: 10px;
+    font-family: 'DeadheadRough';
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    font-variant: small-caps;
+    font-weight: 600;
+}
+
+.navbar-1 {
+    padding-top: 15px;
+    width: 400px;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.navbar-1 a {
+    text-decoration: none;
+    color: white;
+    border: none;
+    transition: 0.3s;
+}
+
+.navbar-1 a:hover {
+    color: #FFD700;
+    border: 2px solid #FFD700;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.navbar-2 {
+    width: 212px;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.navbar-2 a {
+    text-decoration: none;
+    color: #F63E3E;
+    padding: 5px 20px 10px 20px;
+    margin: 5px;
+    border: 2px solid #F63E3E;
+    border-radius: 20px;
+    transition: .3s;
+}
+
+#login-btn {
+    background-color: #097BE3;
+    border: 2px solid #097BE3;
+    color: rgb(25, 25, 25);
+}
+
+#login-btn:hover {
+    background-color: transparent;
+    border-color: #097BE3;
+    color: #097BE3;
+}
+
+#signup-btn:hover {
+    background-color: #F63E3E;
+    color: rgb(25, 25, 25);
+}
+
+p {
+    color: white;
+    font-size: 30px;
+}
+
+#more-icon-btn {
+    display: none;
+    z-index: 160;
+    width: 40x;
+    height: 40px;
+}
+
+/*Main Code*/
+
+.h1 {
+    text-align: center;
+    font-variant: small-caps;
+    padding-top: 130px;
+    padding-bottom: 40px;
+}
+
+/*Services Code*/
+
+.services {
+    width: 100%;
+    height: 720px;
+    /* background-image: url('/assets/navbar-bg.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat; */
+}
+
+.service-section-1 {
+    width: 80%;
+    height: 320px;
+    margin-bottom: 20px;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.service-section-2 {
+    width: 80%;
+    height: 320px;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.service-section-1,
+.service-section-2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.service-1,
+.service-2,
+.service-3,
+.service-4 {
+    width: 40%;
+    height: 320px;
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    transition: .3s;
+    border-radius: 20px;
+}
+
+.service-1:hover,
+.service-2:hover,
+.service-3:hover,
+.service-4:hover {
+    transform: scale(1.2);
+}
+
+
+.service-1 {
+    background-image: url('/photos/haircut1.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 5px 5px 20px 10px rgb(0, 0, 0, 0.3);
+}
+
+.service-2 {
+    background-image: url('/photos/beard1.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 5px 5px 20px 10px rgb(0, 0, 0, 0.3);
+}
+
+.service-3 {
+    background-image: url('/photos/mustache1.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 5px 5px 20px 10px rgb(0, 0, 0, 0.3);
+}
+
+.service-4 {
+    background-image: url('/photos/special1.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 5px 5px 20px 10px rgb(0, 0, 0, 0.3);
+}
+
+.service-1 nav a,
+.service-2 nav a,
+.service-3 nav a,
+.service-4 nav a {
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 3px 5px;
+    transition: .3s;
+    box-shadow: 5px 5px 5px 5px rgb(0, 0, 0, 0.3);
+}
+
+.service-1 nav a:hover,
+.service-2 nav a:hover,
+.service-3 nav a:hover,
+.service-4 nav a:hover {
+    color: #FFD700;
+    border: 2px solid #FFD700;
+}
+
+.service-1 p,
+.service-2 p,
+.service-3 p,
+.service-4 p {
+    font-size: 1em;
+    padding-right: 5px;
+}
+
+.service-1 h2,
+.service-2 h2,
+.service-3 h2,
+.service-4 h2 {
+    color: #FFD700;
+    text-shadow: 5px 5px 5px 5px rgb(0, 0, 0, 0.3);
+}
+
+/*Service Description Section Code*/
+
+.serbisyo {
+    height: 2125px;
+}
+
+.serbisyo h2{
+    text-align: center;
+    padding: 40px;
+}
+
+.serbisyo p {
+    font-size: 1em;
+    color: #252525;
+}
+
+.serbisyo-1-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.serbisyo-1-image img {
+    border-radius: 40px;
+    box-shadow: -40px 40px #2c2a2a;
+}
+
+.serbisyo-1-description {
+    padding-top: 100px;
+}
+
+/*Footer Code*/
+.footer {
+    position: static;
+    z-index: 100;
+    background-image: url('/assets/navbar-bg.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+    transform: translate(0%, 174%);
+}
+
+.footer-content {
+    padding-left: 140px;
+    padding-right: 140px;
+    padding-top: 20px;
+}
+
+.footer p {
+    color: white;
+    z-index: 150;
+    font-size: 16px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo-container {
+    display: flex;
+    justify-content: space-between;
+    width: 320px;
+}
+
+.phone-div {
+    display: flex;
+    justify-content: space-between;
+    width: 140px;
+}
+
+.phone-div p {
+    padding-top: 2px;
+}
+
+#phone-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.email-div {
+    display: flex;
+    justify-content: space-between;
+    width: 280px;
+    margin-top: 5px;
+}
+
+.email-div p {
+    padding-bottom: 3px;
+}
+
+#email-icon {
+    width: 30px;
+    height: 25px;
+}
+
+.socmed-icons {
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+}
+
+.socmed-icons img {
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+#instagram-logo {
+    width: 31px;
+    height: 31px;
+}
+
+#tiktok-logo {
+    width: 31px;
+    height: 31px;
+}
+
+#reddit-logo {
+    width: 31px;
+    height: 31px;
+}
+
+.useful-links {
+    width: 400px;
+}
+
+.useful-links p {
+    font-size: 25px;
+    margin-top: 10px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.link-list {
+    list-style-position: inside;
+}
+
+.link-list li {
+    display: flex;
+}
+
+.link-list img {
+    width: 30px;
+    height: 30px;
+    transition: .3s;
+}
+
+.link-list a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+    padding-left: 5px;
+    margin: 5px;
+}
+
+.link-list a:hover {
+    color: #FFD700;
+    transform: translate(10px);
+}
+
+#top-btn {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+#top-btn:hover {
+    color: #FFD700;
+}
+
+#copyright {
+    padding-top: 15px;
+    text-align: center;
+}

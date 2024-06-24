@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GigaCuts Barberia - Forgot Password</title>
+    <link rel="stylesheet" href="fpword.css">
+</head>
+<body>
+    <section class="login-content">
+        <div class="container">
+            <img src="/assets/logo-title-white-without-bg.png">
+        </div>
+        <div class="login-form">
+            <p>Forgot Password</p>
+            <br>
+            <form class="form" onsubmit="return validateForm()">
+                <label for="email">Email Address</label>
+                <br>
+                <input type="text" id="email" placeholder="Enter your email address" required>
+                <br>
+                <label for="role">Role</label>
+                <br>
+                <input type="radio" id="student" name="role" value="student" required>
+                <label for="student">Student</label>
+                <input type="radio" id="parent" name="role" value="parent" required>
+                <label for="parent">Parent</label>
+                <br>
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+            <a href="login.html">User login</a>
+        </div>
+    </section>
+    <div class="welcome">
+        <p>Welcome to <br><b>GigaCuts Barberia</b></p>
+    </div>
+
+    <!-- Linking the external JavaScript file -->
+    <script src="fpword.js"></script>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GigaCuts Barberia - Login</title>
+</head>
+<body>
+    <section class="login-content">
+        <div class="container">
+            <img src="/assets/logo-white-without-bg.png">
+            <div class="login-form">
+                <p>Login</p>
+                <form class="form">
+                    <label for="email">Email Address</label>
+                    <br>
+                    <input type="text" id="email" placeholder="Enter your email address" required>
+                    <br>
+                    <label for="pword">Password</label>
+                    <br>
+                    <input type="password" id="pword" placeholder="Enter your password" required>
+                    <br>
+                    <input type="submit" onclick="alert('Login successful')">
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html> -->

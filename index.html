@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GigaCuts Barberia - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <a href="index.html"><img src="/assets/logo-gold-without-bg.png" alt="logo picture" id="logo-img"></a>
+            <a href="index.html" id="logo-text">GigaCuts Barberia</a>
+        </div>        
+        <nav class="navbar-1">
+            <a href="index.html">Home</a>
+            <a href="aboutus.html">About us</a>
+            <a href="services.html">Services</a>
+            <a href="career.html">Career</a>
+            <a href="contactus.html">Contact us</a> 
+        </nav>
+        <a href="navigation.html"><img src="/assets/more-icon-white.png" id="more-icon-btn"></a>
+        <p>│</p>
+        <nav class="navbar-2">
+            <a href="login.html" id="login-btn">Login</a>
+            <a href="signup.html" id="signup-btn">Sign up</a>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="main-content">
+            <div class="title-content">
+                <img src="/assets/logo-black-without-bg.png" alt="Logo" id="landing-page-logo">
+                <p id="intro">Your premier destination for exceptional barbering services. 
+                    Experience top-notch haircuts and grooming tailored to your style.</p>
+                <nav class="title-btns">
+                    <a href="contactus.html">Make an Appointment</a>
+                    <a href="career.html">Work with us!</a>
+                </nav>
+            </div>
+        </section>
+        <div class="slider">
+            <div class="images">
+                <input type="radio" name="slide" id="img1" checked>
+                <input type="radio" name="slide" id="img2">
+                <input type="radio" name="slide" id="img3">
+                <input type="radio" name="slide" id="img4">
+    
+                <img src="/photos/beard4.png" class="m1" alt="img1">
+                <img src="/photos/mustache4.png" class="m2" alt="img2">
+                <img src="/photos/haircut4.png" class="m3" alt="img3">
+                <img src="/photos/special3.png" class="m4" alt="img4">
+            </div>
+            <div class="dots">
+                <label for="img1"></label>
+                <label for="img2"></label>
+                <label for="img3"></label>
+                <label for="img4"></label>
+            </div>
+        </div>
+
+        <!-- <section class="barbershop-video">
+            <video autoplay loop muted id="main-vid">
+                <source src="https://videos.pexels.com/video-files/3998516/3998516-hd_1366_720_50fps.mp4" type="video/mp4">
+            </video>
+        </section> -->
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <div class="footer-container">
+                    <div class="footer-logo-container">
+                        <a href="index.html"><img src="/assets/logo-gold-without-bg.png" alt="logo picture" id="logo-img"></a>
+                        <a href="index.html" id="logo-text">GigaCuts Barberia</a>
+                    </div>
+                    <p>Phase IV Paliparan III Dasmariñas City, Cavite</p>
+                    <br>
+                    <div class="phone-div">
+                        <img src="/assets/phone-icon-white.png" id="phone-icon">
+                        <p>09123456789</p>
+                    </div>
+                    <div class="email-div">
+                        <img src="/assets/mail-icon-white.png" id="email-icon">
+                        <p>gigacutsbarberia@gmail.com</p>
+                    </div>
+                    <hr>
+                    <div class="socmed-icons">
+                        <a href="https://www.facebook.com/profile.php?id=61561497173823"></a><img src="/assets/facebook-icon-white.png" alt="Facebook landing page"></a>
+                        <a href="https://www.instagram.com/"></a><img src="/assets/instagram-icon-white.png" id="instagram-logo" alt="Instagram landing page"></a>
+                        <a href="https://www.tiktok.com/explore"></a><img src="/assets/tiktok-icon-white.png" id="tiktok-logo" alt="Tiktok landing page"></a>
+                    </div>
+                </div>
+                <div class="useful-links">
+                    <p>Useful Links</p>
+                    <ul class="link-list">
+                        <li><a href="index.html"><span>></span> Home</a></li>
+                        <li><a href="aboutus.html"><span>></span> About us</a></li>
+                        <li><a href="services.html"><span>></span> Services</a></li>
+                        <li><a href="career.html"><span>></span> Career</a></li>
+                        <li><a href="contactus.html"><span>></span> Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="top-btn-div">
+                    <a href="#top" id="top-btn">↑ Go back to the top of the Page</a>
+                </div>
+            </div>
+            <p id="copyright">Copyright &copy; Nestler Gevera & John Christian Maturan - BSIT 22A1 for ICT 008 Final Project 2024</p>
+        </div>
+    </footer>
+    <script>
+        window.onscroll = function() {
+        var header = document.querySelector('header');
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+        };
+    </script>
+</body>
+</html>
